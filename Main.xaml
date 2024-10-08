@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:sc1="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.MLServices;assembly=UiPath.MLServices" xmlns:uma="clr-namespace:UiPath.MLServices.Activities;assembly=UiPath.MLServices.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.MLServices;assembly=UiPath.MLServices" xmlns:uma="clr-namespace:UiPath.MLServices.Activities;assembly=UiPath.MLServices.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -255,11 +255,8 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="901.132075471698,4837.132075471698" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="901.132075471698,4888.754716981131" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="result" />
-      <Variable x:TypeArguments="x:Int32" Name="count" />
-      <Variable x:TypeArguments="x:Int32" Name="count2" />
       <Variable x:TypeArguments="x:Double" Name="res" />
       <Variable x:TypeArguments="x:Double" Name="avg" />
       <Variable x:TypeArguments="x:Double" Name="row" />
@@ -267,16 +264,13 @@
       <Variable x:TypeArguments="x:Double" Name="roundedStar" />
       <Variable x:TypeArguments="x:String" Name="Star" />
       <Variable x:TypeArguments="x:String" Name="remarks" />
-      <Variable x:TypeArguments="sc1:Hashtable" Name="dict" />
-      <Variable x:TypeArguments="njl:JObject" Name="lang_object" />
-      <Variable x:TypeArguments="x:String" Name="resulted_language" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="675.622641509434,2183.5471698113206" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence sap:VirtualizedContainerService.HintSize="675.622641509434,2146.4150943396226" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="filepath" />
       </Sequence.Variables>
@@ -285,20 +279,20 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:SelectFile DisplayName="Browse For File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="641.2075471698113,168.45283018867923" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[filepath]" />
-      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="641.2075471698113,1923.6226415094338" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" TemplatePath="C:\Users\NITHISH KRISHNA\Downloads\student_feedback.xlsx" UseTemplate="True" WorkbookPath="[filepath]">
+      <ui:SelectFile DisplayName="Browse For File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="641.2075471698113,166.64150943396226" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[filepath]" />
+      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="641.2075471698113,1888.3018867924527" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" TemplatePath="C:\Users\NITHISH KRISHNA\Downloads\student_feedback.xlsx" UseTemplate="True" WorkbookPath="[filepath]">
         <ueab:ExcelApplicationCard.Body>
           <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="606.7924528301886,1611.1698113207547" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="606.7924528301886,1584.9056603773583" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="572.377358490566,1551.3962264150941" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B:B&quot;)]" SaveAfterEachRow="True">
+              <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="572.377358490566,1525.132075471698" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B:B&quot;)]" SaveAfterEachRow="True">
                 <ueab:ExcelForEachRowX.Body>
                   <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                     <ActivityAction.Argument1>
@@ -307,29 +301,23 @@
                     <ActivityAction.Argument2>
                       <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                     </ActivityAction.Argument2>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="537.9622641509434,1341.2830188679245" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="537.9622641509434,1320.4528301886792" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="a1" />
-                        <Variable x:TypeArguments="x:String" Name="r" />
                         <Variable x:TypeArguments="x:String" Name="a" />
                         <Variable x:TypeArguments="njl:JObject" Name="DeserializeJsonResult" />
-                        <Variable x:TypeArguments="x:String" Name="detect_language" />
-                        <Variable x:TypeArguments="x:String" Name="hash1" />
-                        <Variable x:TypeArguments="x:String" Name="variable3" />
-                        <Variable x:TypeArguments="x:String" Name="lang_extract" />
-                        <Variable x:TypeArguments="x:String" Name="variable5" />
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ueab:ReadCellValueX Cell="[CurrentRow.ByIndex(0)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="503.5471698113207,190.188679245283" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                      <ueab:ReadCellValueX Cell="[CurrentRow.ByIndex(0)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="503.5471698113207,185.66037735849056" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
                         <ueab:ReadCellValueX.SaveTo>
                           <OutArgument x:TypeArguments="x:String">[a1]</OutArgument>
                         </ueab:ReadCellValueX.SaveTo>
                       </ueab:ReadCellValueX>
-                      <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="File" sap:VirtualizedContainerService.HintSize="503.5471698113207,440.1509433962264" sap2010:WorkflowViewState.IdRef="MLSkills_2" Item="[a1]" JsonResponse="[a]" NextPageNum="2" RefreshList="False" TotalCount="1">
+                      <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="File" sap:VirtualizedContainerService.HintSize="503.5471698113207,438.3396226415094" sap2010:WorkflowViewState.IdRef="MLSkills_2" Item="[a1]" JsonResponse="[a]" NextPageNum="2" RefreshList="False" TotalCount="1">
                         <uma:MLSkills.MLSkillList>
                           <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
                             <x:Reference>__ReferenceID0</x:Reference>
@@ -339,23 +327,20 @@
                           <um:MLSkill x:Name="__ReferenceID0" AccessUri="https://ai-uipath-we-b.deskover.com/mlskills/e2fbc14c-4fb6-4f7b-8ccf-b1f50ca3bf9e/025a7c2c-603b-4d5c-8db8-2d6d7a038546/cluster-b/sentiment" AccountId="e2fbc14c-4fb6-4f7b-8ccf-b1f50ca3bf9e" Description="" Id="5f7022d1-2bb8-4028-801a-e63c6fc11bfd" InputDescription="Text to be analyzed.For example:&quot;I am dissatisfied with this service&quot;" InputType="JSON" Name="sentiment" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1). Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;. For example: {&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}" ProjectId="96ad59bd-8a95-4bba-ab6c-d8b0d9d51227" TenantId="025a7c2c-603b-4d5c-8db8-2d6d7a038546" />
                         </uma:MLSkills.SelectedMLSkill>
                       </uma:MLSkills>
-                      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="503.5471698113207,120.45283018867924" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[DeserializeJsonResult]" JsonString="[a]" />
-                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="503.5471698113207,530.7169811320755" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\NITHISH KRISHNA\Documents\Analysis Report.xlsx">
+                      <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="503.5471698113207,119.54716981132074" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[DeserializeJsonResult]" JsonString="[a]" />
+                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="503.5471698113207,517.132075471698" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\NITHISH KRISHNA\Documents\Analysis Report.xlsx">
                         <ueab:ExcelApplicationCard.Body>
                           <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="469.1320754716981,240.9056603773585" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                              <Sequence.Variables>
-                                <Variable x:TypeArguments="x:String" Name="dou" />
-                              </Sequence.Variables>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="469.1320754716981,236.37735849056602" sap2010:WorkflowViewState.IdRef="Sequence_10">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434.71698113207543,181.1320754716981" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[DeserializeJsonResult(&quot;confidence&quot;)]" />
+                              <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434.71698113207543,176.60377358490564" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[DeserializeJsonResult(&quot;confidence&quot;)]" />
                             </Sequence>
                           </ActivityAction>
                         </ueab:ExcelApplicationCard.Body>
@@ -369,19 +354,19 @@
         </ueab:ExcelApplicationCard.Body>
       </ueab:ExcelApplicationCard>
     </Sequence>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="675.622641509434,868.5283018867924" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" SensitivityOperation="None" TemplatePath="C:\Users\NITHISH KRISHNA\Documents\Analysis Report.xlsx" UseTemplate="True" WorkbookPath="C:\Users\NITHISH KRISHNA\Documents\Analysis Report.xlsx">
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="675.622641509434,967.2452830188679" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" SensitivityOperation="None" TemplatePath="C:\Users\NITHISH KRISHNA\Documents\Analysis Report.xlsx" UseTemplate="True" WorkbookPath="C:\Users\NITHISH KRISHNA\Documents\Analysis Report.xlsx">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="537.9622641509434,547.0188679245283" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="537.9622641509434,654.7924528301886" sap2010:WorkflowViewState.IdRef="Sequence_14">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="503.5471698113207,487.2452830188679" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_3" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B:B&quot;)]" SaveAfterEachRow="False">
+            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="503.5471698113207,595.0188679245283" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_3" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B:B&quot;)]" SaveAfterEachRow="True">
               <ueab:ExcelForEachRowX.Body>
                 <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                   <ActivityAction.Argument1>
@@ -390,21 +375,21 @@
                   <ActivityAction.Argument2>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument2>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="469.1320754716981,277.1320754716981" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="469.1320754716981,390.33962264150944" sap2010:WorkflowViewState.IdRef="Sequence_15">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,113.2075471698113" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,112.30188679245282" sap2010:WorkflowViewState.IdRef="Assign_7">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Double">[res]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:Double">[res+Convert.ToDouble(CurrentRow("A").ToString)]</InArgument>
+                        <InArgument x:TypeArguments="x:Double">[res+Convert.ToDouble(CurrentRow("B").ToString)]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,104.15094339622641" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,112.30188679245282" sap2010:WorkflowViewState.IdRef="Assign_8">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Double">[row]</OutArgument>
                       </Assign.To>
@@ -412,6 +397,7 @@
                         <InArgument x:TypeArguments="x:Double">[row+1]</InArgument>
                       </Assign.Value>
                     </Assign>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434.71698113207543,105.96226415094338" sap2010:WorkflowViewState.IdRef="MessageBox_9" Text="[res]" />
                   </Sequence>
                 </ActivityAction>
               </ueab:ExcelForEachRowX.Body>
@@ -420,7 +406,7 @@
         </ActivityAction>
       </ueab:ExcelApplicationCard.Body>
     </ueab:ExcelApplicationCard>
-    <Assign sap:VirtualizedContainerService.HintSize="675.622641509434,113.2075471698113" sap2010:WorkflowViewState.IdRef="Assign_9">
+    <Assign sap:VirtualizedContainerService.HintSize="675.622641509434,112.30188679245282" sap2010:WorkflowViewState.IdRef="Assign_9">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Double">[avg]</OutArgument>
       </Assign.To>
@@ -428,7 +414,7 @@
         <InArgument x:TypeArguments="x:Double">[res/row]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="675.622641509434,113.2075471698113" sap2010:WorkflowViewState.IdRef="Assign_10">
+    <Assign sap:VirtualizedContainerService.HintSize="675.622641509434,112.30188679245282" sap2010:WorkflowViewState.IdRef="Assign_10">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Double">[starRating]</OutArgument>
       </Assign.To>
@@ -436,7 +422,7 @@
         <InArgument x:TypeArguments="x:Double">[avg*5]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="675.622641509434,113.2075471698113" sap2010:WorkflowViewState.IdRef="Assign_11">
+    <Assign sap:VirtualizedContainerService.HintSize="675.622641509434,112.30188679245282" sap2010:WorkflowViewState.IdRef="Assign_11">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Double">[roundedStar]</OutArgument>
       </Assign.To>
@@ -444,7 +430,7 @@
         <InArgument x:TypeArguments="x:Double">[Math.Round(starRating)]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="675.622641509434,113.2075471698113" sap2010:WorkflowViewState.IdRef="Assign_12">
+    <Assign sap:VirtualizedContainerService.HintSize="675.622641509434,112.30188679245282" sap2010:WorkflowViewState.IdRef="Assign_12">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[Star]</OutArgument>
       </Assign.To>
@@ -452,15 +438,15 @@
         <InArgument x:TypeArguments="x:String">[New String("★"c, CInt(roundedStar)) + New String("☆"c, 5 - CInt(roundedStar))]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:IfElseIfV2 Condition="[roundedStar &gt;= 4.5]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="675.622641509434,1202.7169811320755" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
+    <ui:IfElseIfV2 Condition="[roundedStar &gt;= 4.5]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="675.622641509434,1197.2830188679245" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
       <ui:IfElseIfV2.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="469.1320754716981,163.9245283018868" sap2010:WorkflowViewState.IdRef="Sequence_21">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="469.1320754716981,163.01886792452828" sap2010:WorkflowViewState.IdRef="Sequence_21">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,104.15094339622641" sap2010:WorkflowViewState.IdRef="Assign_19">
+          <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,103.24528301886792" sap2010:WorkflowViewState.IdRef="Assign_19">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[remarks]</OutArgument>
             </Assign.To>
@@ -474,13 +460,13 @@
         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
           <ui:IfElseIfBlock BlockType="ElseIf" Condition="[roundedStar&gt;=3.5]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
             <ui:IfElseIfBlock.Then>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="469.1320754716981,163.9245283018868" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="469.1320754716981,163.01886792452828" sap2010:WorkflowViewState.IdRef="Sequence_24">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,104.15094339622641" sap2010:WorkflowViewState.IdRef="Assign_15">
+                <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,103.24528301886792" sap2010:WorkflowViewState.IdRef="Assign_15">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[remarks]</OutArgument>
                   </Assign.To>
@@ -493,13 +479,13 @@
           </ui:IfElseIfBlock>
           <ui:IfElseIfBlock BlockType="ElseIf" Condition="[roundedStar&gt;=2.5]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
             <ui:IfElseIfBlock.Then>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="469.1320754716981,163.9245283018868" sap2010:WorkflowViewState.IdRef="Sequence_25">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="469.1320754716981,163.01886792452828" sap2010:WorkflowViewState.IdRef="Sequence_25">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,104.15094339622641" sap2010:WorkflowViewState.IdRef="Assign_16">
+                <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,103.24528301886792" sap2010:WorkflowViewState.IdRef="Assign_16">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[remarks]</OutArgument>
                   </Assign.To>
@@ -512,13 +498,13 @@
           </ui:IfElseIfBlock>
           <ui:IfElseIfBlock BlockType="ElseIf" Condition="[roundedStar&gt;=1.5]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_6">
             <ui:IfElseIfBlock.Then>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="469.1320754716981,163.9245283018868" sap2010:WorkflowViewState.IdRef="Sequence_26">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="469.1320754716981,163.01886792452828" sap2010:WorkflowViewState.IdRef="Sequence_26">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,104.15094339622641" sap2010:WorkflowViewState.IdRef="Assign_18">
+                <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,103.24528301886792" sap2010:WorkflowViewState.IdRef="Assign_18">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[remarks]</OutArgument>
                   </Assign.To>
@@ -532,13 +518,13 @@
         </sc:BindingList>
       </ui:IfElseIfV2.ElseIfs>
       <ui:IfElseIfV2.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="469.1320754716981,163.9245283018868" sap2010:WorkflowViewState.IdRef="Sequence_23">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="469.1320754716981,163.01886792452828" sap2010:WorkflowViewState.IdRef="Sequence_23">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,104.15094339622641" sap2010:WorkflowViewState.IdRef="Assign_14">
+          <Assign sap:VirtualizedContainerService.HintSize="434.71698113207543,103.24528301886792" sap2010:WorkflowViewState.IdRef="Assign_14">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[remarks]</OutArgument>
             </Assign.To>
@@ -549,6 +535,6 @@
         </Sequence>
       </ui:IfElseIfV2.Then>
     </ui:IfElseIfV2>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="675.622641509434,106.86792452830188" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Your Ratings: &quot;+Star.ToString+vbCrLf+remarks]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="675.622641509434,105.96226415094338" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Your Ratings: &quot;+Star.ToString+vbCrLf+remarks]" />
   </Sequence>
 </Activity>
